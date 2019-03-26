@@ -1,23 +1,23 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-//��̨����������
+//后
 class CommonController extends Controller{
-	//���췽��
+	//构造方法
     public function __construct() {
-        parent::__construct(); //��ִ�и��๹�췽��
-		$this->checkUser();    //��¼���
-		//�Ѿ���¼��Ϊģ������û�������
+        parent::__construct(); //先执行父类构造方法
+		$this->checkUser();    //登录检查
+		//已经登录，为模板分配用户名变量
 		$this->assign('admin_name',session('name'));
     }
-	//����û��Ƿ��Ѿ���¼
+	//检查用户是否已经登录
 	private function checkUser(){
 		if(!session('name')){
-			//δ��¼�����ȵ�¼
+			//未登录，请先登录
 			$this->redirect('Login/index');
 		}
 	}
 	public function _empty($name){
-		$this->error('��Ч�Ĳ�����'.$name);
+		$this->error('无效的操作：'.$name);
     }
 }
