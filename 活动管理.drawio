@@ -1,1 +1,109 @@
-<mxfile host="app.diagrams.net" modified="2021-08-11T01:41:37.758Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" version="14.9.3" etag="cZWSq6qAidA_vDJMdk0M" type="github"><diagram id="NRTWZSQs70VKydZbSNgj">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-11T10:28:07.741Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="dpw-uzYdlaopmmBC6rrn" version="14.9.3" type="github">
+  <diagram id="NRTWZSQs70VKydZbSNgj" name="第 1 页">
+    <mxGraphModel dx="946" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="1390" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-1" value="opportunityActivity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="230" height="190" as="geometry">
+            <mxRectangle x="260" y="120" width="150" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-2" value="+name 活动名称&#xa;+type 活动类型&#xa;+start_timestamp&#xa;+end_timestamp&#xa;+card_limit 卡级限制&#xa;+user_limit 用户限制&#xa;+acquire_opportunity_rule 获取奖励规则&#xa;+create_timestamp&#xa;+update_timestamp" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-1">
+          <mxGeometry y="30" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-3" value="fullReductionOpportunityActivity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="370" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-4" value="+ref_marketing_activity 关联的营销活动&#xa;+is_return_sales 退货商品是否回退" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-3">
+          <mxGeometry y="30" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-6" value="活动定义：&lt;br&gt;线下满额送：full reduction&lt;br&gt;到场有礼：attend gift" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="40" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-7" value="attendGiftOpportunityActivity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="430" y="370" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-8" value="+platform 活动平台&#xa;+trigger_condition 触发动作&#xa;+acquire_opportunity_rule 获取奖励规则" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-7">
+          <mxGeometry y="30" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-14" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.522;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vtxZY_3m8VoTMoDoGRE6-3" target="vtxZY_3m8VoTMoDoGRE6-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="550" as="sourcePoint" />
+            <mxPoint x="470" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="375" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-15" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vtxZY_3m8VoTMoDoGRE6-7" target="vtxZY_3m8VoTMoDoGRE6-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="462.53" y="370" as="sourcePoint" />
+            <mxPoint x="627.47" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="375" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-16" value="user_limit" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="140" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-29" value="+is_prohibit 是否禁止&#xa;+user_pool_list 用户池组" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-16">
+          <mxGeometry y="30" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-18" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vtxZY_3m8VoTMoDoGRE6-29">
+          <mxGeometry x="-0.4057" y="5" relative="1" as="geometry">
+            <mxPoint x="622" y="195" as="sourcePoint" />
+            <mxPoint x="492" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="195" />
+              <mxPoint x="550" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-26" value="acquire_opportunity_rule" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="230" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-27" value="+name 奖励&#xa;+order_type 订单类型&#xa;+ref_lottery_id 关联抽奖活动&#xa;+ref_lottery_rule 关联抽奖规则&#xa;+session_timestamp 场次" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-26">
+          <mxGeometry y="30" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-28" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vtxZY_3m8VoTMoDoGRE6-27">
+          <mxGeometry x="-0.4884" y="10" relative="1" as="geometry">
+            <mxPoint x="620" y="205" as="sourcePoint" />
+            <mxPoint x="490" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="548" y="305" />
+              <mxPoint x="548" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-30" value="tigger_condition" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="730" y="380" width="230" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-31" value="+trigger_condition 触发动作&#xa;+is_fixed_times 是否固定频次&#xa;+session_times 场次&#xa;+days 天&#xa;+duration 时长&#xa;+interval 间隔&#xa;+first_session_timestamp 首场时间&#xa;+acquire_of_day_limit 单日获取上线 &#xa;+acquire_of_upper_limit 最高上限" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-30">
+          <mxGeometry y="30" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-33" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vtxZY_3m8VoTMoDoGRE6-31" target="vtxZY_3m8VoTMoDoGRE6-8">
+          <mxGeometry x="-0.4074" y="25" relative="1" as="geometry">
+            <mxPoint x="800" y="490" as="sourcePoint" />
+            <mxPoint x="660" y="425" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="675" y="485" />
+              <mxPoint x="675" y="530" />
+              <mxPoint x="545" y="530" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-35" value="lotteryOpportunity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="210" y="520" width="230" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vtxZY_3m8VoTMoDoGRE6-36" value="+id 机会id&#xa;+name 机会名称&#xa;+opportunity_activity_id 活动id&#xa;+lottery_activity_id 抽奖活动id&#xa;+lottery_rule_id 抽奖规则id&#xa;+bzid 营销平台业务id&#xa;+user_id 用户id&#xa;+status 机会状态&#xa;+create_timestamp&#xa;+update_timestamp" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vtxZY_3m8VoTMoDoGRE6-35">
+          <mxGeometry y="30" width="230" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
